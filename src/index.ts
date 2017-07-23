@@ -38,8 +38,8 @@ class Program {
             return console.error('Refresh time must be longer than 10000ms (10s)');
         }
 
-        this.config.username = this.config.username.replace( /[^\x00-\x7F]/g, '' ); // remove non-standard-ASCII characters
-        this.config.password = this.config.password.replace( /[^\x00-\x7F]/g, '' ); // remove non-standard-ASCII characters
+        this.config.username = this.config.username.replace( /[^\x00-\x7F]/g, '' );
+        this.config.password = this.config.password.replace( /[^\x00-\x7F]/g, '' );
 
         this.login({}, this.begin);
     }
